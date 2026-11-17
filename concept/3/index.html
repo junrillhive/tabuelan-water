@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuelan Water District — Watershed to Coastal Community | Concept 3</title>
+  <meta name="description" content="Official portal of Tabuelan Water District (TAWD), Province of Cebu. Sustainable spring-to-home water service, watershed stewardship, community highlights, live advisories, and LWUA rates.">
+  <meta name="theme-color" content="#052925">
+  <meta property="og:title" content="Tabuelan Water District — Concept 3">
+  <meta property="og:description" content="From upland springs to coastal homes: clean, sustainable water for all 12 barangays of Tabuelan.">
+  <meta property="og:image" content="assets/hero-bg.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ================= Top Government & Eco Status Bar ================= -->
+  <div class="topstrip">
+    <div class="container topstrip-inner">
+      <div class="topstrip-group">
+        <span class="topstrip-country">
+          <i class="ph-gem" aria-hidden="true"></i>
+          Republic of the Philippines &bull; GOCC (PD 198)
+        </span>
+        <span class="pst" id="pstClock">Philippine Standard Time</span>
+      </div>
+      <div class="topstrip-group hide-sm">
+        <span><i class="open-dot" id="openDot"></i><span id="officeStatus">Office hours: Mon–Fri, 8:00 AM – 5:00 PM (No Noon Break)</span></span>
+        <a href="tel:0324619206">(032) 461 9206</a>
+        <a href="mailto:tawd.cebu@yahoo.com">tawd.cebu@yahoo.com</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Sticky Header ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Tabuelan Water District home">
+        <img src="assets/logo-landscape-transparent.png" alt="Tabuelan Water District" width="172" height="50">
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#watershed">Watershed &amp; Story</a></li>
+          <li><a href="#announcements">Announcements</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#help">Services</a></li>
+          <li><a href="#toolkit">Rates &amp; Toolkit</a></li>
+          <li><a href="#trust">Transparency</a></li>
+          <li><a href="#visit">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="btn btn-coral js-open-report" aria-label="Report a leak">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+          <span>Report a Leak</span>
+        </button>
+        <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO (Eco-Tropical & Coastal Community) ================= -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <img src="assets/hero-bg.jpg" alt="Lush Tabuelan spring watershed and coastal community" fetchpriority="high">
+      </div>
+
+      <div class="container hero-content">
+        <div class="hero-main-grid">
+          <div class="hero-copy">
+            <span class="hero-kicker">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              Maayong pag-abot! &bull; Sustainable Water for Tabuelan, Cebu
+            </span>
+            <h1>From upland springs<br>to <em>coastal homes,</em><br>pure &amp; flowing.</h1>
+            <p class="hero-sub">
+              Protecting our natural watersheds while delivering safe, solar-pumped, laboratory-tested drinking water to 4,200+ families across all 12 barangays of Tabuelan.
+            </p>
+            <div class="hero-ctas">
+              <a href="#watershed" class="btn btn-aqua">
+                Explore Our Water Journey
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="#toolkit" class="btn btn-glass js-tool-link" data-tool="estimator">Estimate Your Bill</a>
+              <a href="#announcements" class="btn btn-glass">Advisories</a>
+            </div>
+          </div>
+
+          <!-- Eco-Watershed Live Telemetry Card -->
+          <aside class="hero-eco-card" aria-label="Watershed and System Status">
+            <div class="hero-eco-head">
+              <div class="hero-eco-title">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8ef7e4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8c.7-1 1-2.2 1-3.5C18 2 15 2 15 2s0 3-2.5 5.5S7 10 7 14a5 5 0 0 0 10 0c0-1.5-.5-2.8-1.3-3.8"/><path d="M12 14v8"/></svg>
+                <span>Watershed &amp; Network Pulse</span>
+              </div>
+              <span class="eco-live-pill"><i></i> Live</span>
+            </div>
+            <div class="hero-eco-metrics">
+              <div class="eco-metric">
+                <small>Spring &amp; Well Yield</small>
+                <strong>98.4%</strong>
+                <span>Optimal aquifer level</span>
+              </div>
+              <div class="eco-metric">
+                <small>Solar Pump Output</small>
+                <strong>42.5 kW</strong>
+                <span>Maravilla hybrid array</span>
+              </div>
+              <div class="eco-metric">
+                <small>Water Safety (PNSDW)</small>
+                <strong>100% Pass</strong>
+                <span>0 E. coli &bull; 0.8 ppm Cl₂</span>
+              </div>
+              <div class="eco-metric">
+                <small>Active Barangays</small>
+                <strong>12 / 12</strong>
+                <span>28.4 psi avg. pressure</span>
+              </div>
+            </div>
+            <div class="hero-eco-foot">
+              <span> Watershed trees planted: <strong>2,640+ native seedlings</strong></span>
+              <a href="#toolkit" class="js-tool-link" data-tool="network">Check barangay PSI &rarr;</a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Happening now strip -->
+        <div class="hero-now" aria-label="Happening now">
+          <div class="hero-now-label"><small>This week</small>Happening now</div>
+          <a href="#announcements" class="hero-now-item">
+            <span class="hero-now-tag">Advisory &bull; Oct 16</span>
+            <p>Night-time eco-flushing in Maravilla &amp; Tabunok, 10 PM – 4 AM</p>
+          </a>
+          <a href="#projects" class="hero-now-item">
+            <span class="hero-now-tag">Green Energy &bull; 85% done</span>
+            <p>Maravilla solar-hybrid pumping station now in testing phase</p>
+          </a>
+          <a href="#watershed" class="hero-now-item">
+            <span class="hero-now-tag">Watershed &bull; Nov 8</span>
+            <p>Kanlim-ao spring reforestation drive open for community volunteers</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WELCOME & COMMUNITY STORY ================= -->
+    <section class="welcome">
+      <div class="container welcome-grid">
+        <div class="welcome-photo reveal">
+          <img src="assets/family-water.jpg" alt="A Tabuelan mother and daughter enjoying clean tap water at home" loading="lazy" width="620" height="470">
+          <div class="welcome-badge-top">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8ef7e4" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Serving Tabuelan Since PD 198 Charter</span>
+          </div>
+          <div class="welcome-badge">
+            <div class="welcome-badge-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <div>
+              <strong>4,200+</strong>
+              <span>households &amp; coastal businesses connected across 12 barangays</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <span class="eyebrow"><i class="eyebrow-dot"></i> Who we are</span>
+          <h2 class="section-title">Stewards of Tabuelan's <em>springs, rivers,</em> and community tap water.</h2>
+          <p class="welcome-quote">"Healthy upland watersheds mean reliable, crystal-clear water at your kitchen sink. Every tree we protect and every solar pump we build keeps Tabuelan thriving."</p>
+          <ul class="welcome-points">
+            <li>
+              <span class="check-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span><strong>100% PNSDW Compliant:</strong> Monthly bacteriological and daily chlorine residual checks from source to tap.</span>
+            </li>
+            <li>
+              <span class="check-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span><strong>Climate-Resilient Solar Pumping:</strong> Transitioning key stations to renewable solar power to keep water flowing during grid outages.</span>
+            </li>
+            <li>
+              <span class="check-ic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span><strong>People-First Public Service:</strong> Open Monday to Friday, 8:00 AM – 5:00 PM in Sitio Ibabao, Poblacion with no noon break.</span>
+            </li>
+          </ul>
+          <a href="#visit" class="link-arrow">
+            Visit our Poblacion office
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RIDGE-TO-REEF WATERSHED & COMMUNITY HIGHLIGHTS ================= -->
+    <section class="watershed" id="watershed">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Ridge-to-Reef Sustainability</span>
+            <h2 class="section-title">How your water journeys from <em>spring to sea</em></h2>
+            <p class="section-lead">We manage the entire water cycle responsibly—protecting upland forests in Kanlim-ao and Maravilla so coastal families in Poblacion, Olivo, and Tigbawan enjoy uninterrupted supply.</p>
+          </div>
+          <a href="#toolkit" class="btn btn-outline js-tool-link" data-tool="ecotips">Water Conservation Tips</a>
+        </div>
+
+        <!-- 4-Stage Eco Journey -->
+        <div class="journey-flow">
+          <article class="journey-card reveal">
+            <span class="journey-step-num">Stage 01 &bull; Source</span>
+            <div class="journey-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 8c.7-1 1-2.2 1-3.5C18 2 15 2 15 2s0 3-2.5 5.5S7 10 7 14a5 5 0 0 0 10 0c0-1.5-.5-2.8-1.3-3.8"/><path d="M12 14v8"/></svg>
+            </div>
+            <h3>Protected Upland Springs</h3>
+            <p>Natural spring catchments and deep aquifers surrounded by reforested buffer zones in Tabuelan's uplands.</p>
+            <div class="journey-stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              2,640+ native trees planted
+            </div>
+          </article>
+
+          <article class="journey-card reveal">
+            <span class="journey-step-num">Stage 02 &bull; Clean Energy</span>
+            <div class="journey-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
+            </div>
+            <h3>Solar-Hybrid Pumping</h3>
+            <p>Daytime solar arrays power our booster pumps, cutting electricity costs and keeping reservoirs full during brownouts.</p>
+            <div class="journey-stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              18.5 tons CO₂ offset / yr
+            </div>
+          </article>
+
+          <article class="journey-card reveal">
+            <span class="journey-step-num">Stage 03 &bull; Lab Safety</span>
+            <div class="journey-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/></svg>
+            </div>
+            <h3>Automated Treatment &amp; Lab</h3>
+            <p>Multi-stage filtration, precise chlorination, and regular bacteriological testing under DOH-PNSDW standards.</p>
+            <div class="journey-stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              0 Coliform / 100% Safe
+            </div>
+          </article>
+
+          <article class="journey-card reveal">
+            <span class="journey-step-num">Stage 04 &bull; Community</span>
+            <div class="journey-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>12 Barangays Connected</h3>
+            <p>Pressurized HDPE distribution lines with rapid leak response teams keeping Non-Revenue Water (NRW) low.</p>
+            <div class="journey-stat">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              24/7 Leak Dispatch Crew
+            </div>
+          </article>
+        </div>
+
+        <!-- Community Voices & Highlights -->
+        <div class="community-strip reveal">
+          <div class="community-strip-head">
+            <div>
+              <span class="eyebrow" style="margin-bottom:0.45rem;"><i class="eyebrow-dot"></i> Community Highlights</span>
+              <h3>Voices from our 12 barangays</h3>
+            </div>
+            <span class="updated" style="margin-top:0;">Stories from Tabuelan households, schools &amp; volunteers</span>
+          </div>
+          <div class="community-voices">
+            <article class="voice-card">
+              <div>
+                <span class="voice-tag">Sitio Tap &bull; Kanlim-ao</span>
+                <blockquote style="margin-top:0.65rem;">"Before the upland pipeline extension, we had to fetch water in containers every morning. Now my children can wash up for school right at home."</blockquote>
+              </div>
+              <div class="voice-author">
+                <div class="voice-avatar">MR</div>
+                <div>
+                  <b>Marites R.</b>
+                  <small>Household Concessionaire, Brgy. Kanlim-ao</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="voice-card">
+              <div>
+                <span class="voice-tag">WASH in Schools &bull; Poblacion</span>
+                <blockquote style="margin-top:0.65rem;">"Consistent water pressure at our handwashing stations keeps over 600 elementary pupils healthy and hygienic throughout the school day."</blockquote>
+              </div>
+              <div class="voice-author">
+                <div class="voice-avatar">EC</div>
+                <div>
+                  <b>Elena C.</b>
+                  <small>School Health Coordinator, Brgy. Poblacion</small>
+                </div>
+              </div>
+            </article>
+
+            <article class="voice-card">
+              <div>
+                <span class="voice-tag">Watershed Care &bull; Maravilla</span>
+                <blockquote style="margin-top:0.65rem;">"Joining TAWD's tree-planting along our spring buffer zone taught our youth that protecting trees means protecting our barangay's future water."</blockquote>
+              </div>
+              <div class="voice-author">
+                <div class="voice-avatar">JD</div>
+                <div>
+                  <b>Jomar D.</b>
+                  <small>Watershed Volunteer, Brgy. Maravilla</small>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ANNOUNCEMENTS ================= -->
+    <section class="news" id="announcements">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Announcements &amp; Advisories</span>
+            <h2 class="section-title">What's happening across <em>TAWD</em></h2>
+            <p class="section-lead">Service advisories, infrastructure updates, watershed initiatives, and public notices.</p>
+          </div>
+          <div class="news-controls">
+            <div class="news-filters" role="group" aria-label="Filter announcements">
+              <button type="button" class="chip active" data-filter="all">All</button>
+              <button type="button" class="chip" data-filter="advisory">Advisories</button>
+              <button type="button" class="chip" data-filter="update">Projects</button>
+              <button type="button" class="chip" data-filter="eco">Sustainability</button>
+              <button type="button" class="chip" data-filter="notice">Notices</button>
+            </div>
+            <div class="news-search">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="search" id="newsSearch" placeholder="Search barangay or topic…" aria-label="Search announcements">
+            </div>
+          </div>
+        </div>
+
+        <div class="news-grid">
+          <!-- Feature story -->
+          <article class="news-feature reveal">
+            <img src="assets/maintenance.jpg" alt="TAWD field crew working on a valve line" loading="lazy">
+            <div class="news-feature-body">
+              <span class="tag tag-onimage">Featured Advisory</span>
+              <h3>Scheduled line flushing and eco-disinfection for northern barangays</h3>
+              <p>Our crew will flush and disinfect the distribution mains during off-peak night hours to keep your tap water crystal clear. Please store enough water ahead of schedule.</p>
+              <div class="news-feature-meta">
+                <span><strong>Areas:</strong> Maravilla, Tabunok, Poblacion (North)</span>
+                <span><strong>When:</strong> Thu, Oct 16 &bull; 10:00 PM – 4:00 AM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- List -->
+          <div>
+            <div class="news-list" id="newsList">
+              <article class="news-item" data-category="eco" data-title="Adopt-a-Watershed tree planting in Kanlim-ao spring buffer zone" data-date="Oct 14, 2026" data-body="TAWD invites barangay officials, youth groups, and concessionaires to join our 4th quarter native tree-planting activity at the Kanlim-ao spring catchment area on November 8, 2026 (6:30 AM assembly at Poblacion Plaza). Seedlings of narra, bangkal, and native bamboo will be provided.">
+                <div class="news-date"><b>14</b><span>Oct</span></div>
+                <div>
+                  <span class="tag tag-eco">Sustainability</span>
+                  <h4>Adopt-a-Watershed tree planting in Kanlim-ao spring buffer zone</h4>
+                  <p>Join volunteers on Nov 8 as we plant 600 native seedlings to protect our upland water source.</p>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="update" data-title="Poblacion crossing leak repaired, full pressure restored" data-date="Oct 11, 2026" data-body="Our rapid leak response team replaced a damaged 75mm uPVC transmission section near the Poblacion highway crossing. Full normal pressure (33 psi) was restored by 4:15 PM, saving an estimated 18 cubic meters per day in non-revenue water.">
+                <div class="news-date"><b>11</b><span>Oct</span></div>
+                <div>
+                  <span class="tag tag-update">Project Update</span>
+                  <h4>Poblacion crossing leak repaired, full pressure restored</h4>
+                  <p>A damaged 75mm section was replaced. Water pressure returned to 33 psi by 4:15 PM.</p>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="notice" data-title="Senior Citizen & PWD 5% discount: annual renewal open" data-date="Oct 08, 2026" data-body="Concessionaires availing of the 5% Senior Citizen or PWD water bill discount under RA 9994 / RA 10754 may renew their annual registration at our Sitio Ibabao office until October 31. Please bring your valid OSCA/PWD ID and latest water bill.">
+                <div class="news-date"><b>08</b><span>Oct</span></div>
+                <div>
+                  <span class="tag tag-notice">Notice</span>
+                  <h4>Senior Citizen &amp; PWD 5% discount: annual renewal</h4>
+                  <p>Bring your ID and latest bill to the cashier on or before October 31 to keep your discount.</p>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="advisory" data-title="Solar booster pump test run in Maravilla" data-date="Oct 05, 2026" data-body="Engineers are conducting solar-to-grid synchronization tests at the new Maravilla Solar Pumping Station between 1:00 PM and 3:00 PM. Consumers in elevated sitios may notice brief pressure fluctuations during the switch-over.">
+                <div class="news-date"><b>05</b><span>Oct</span></div>
+                <div>
+                  <span class="tag tag-advisory">Advisory</span>
+                  <h4>Solar booster pump test run in Maravilla</h4>
+                  <p>Test pumping from 1:00–3:00 PM. You may notice slight pressure changes during switch-over.</p>
+                </div>
+              </article>
+            </div>
+            <div class="news-empty" id="newsEmpty">No announcements match your search filter.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS & PROGRESS ================= -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Projects &amp; Green Infrastructure</span>
+            <h2 class="section-title">Building a <em>climate-resilient</em> water network</h2>
+            <p class="section-lead">Follow each capital project from groundbreaking to commissioning. Updated monthly for public transparency.</p>
+          </div>
+          <a href="#trust" class="btn btn-outline">PhilGEPS &amp; Procurement</a>
+        </div>
+
+        <!-- Impact counters -->
+        <div class="impact-row">
+          <div class="impact reveal">
+            <div class="impact-num"><span class="js-count" data-to="4200">0</span><sup>+</sup></div>
+            <div class="impact-label">Households served daily</div>
+          </div>
+          <div class="impact reveal">
+            <div class="impact-num"><span class="js-count" data-to="15.2" data-decimals="1">0</span><sup>km</sup></div>
+            <div class="impact-label">New HDPE pipelines laid since 2023</div>
+          </div>
+          <div class="impact reveal">
+            <div class="impact-num"><span class="js-count" data-to="42.5" data-decimals="1">0</span><sup>kW</sup></div>
+            <div class="impact-label">Clean solar pumping capacity</div>
+          </div>
+          <div class="impact reveal">
+            <div class="impact-num"><span class="js-count" data-to="12">0</span><sup>/12</sup></div>
+            <div class="impact-label">Tabuelan barangays covered</div>
+          </div>
+        </div>
+
+        <!-- Flagship project -->
+        <article class="flagship reveal">
+          <div class="flagship-media">
+            <img src="assets/solar-pump.jpg" alt="Solar-powered pumping station in Maravilla" loading="lazy">
+            <span class="flagship-flag"><i></i> Flagship Green Project &bull; 85% Complete</span>
+            <span class="flagship-eco-pill">⚡ Saves ~₱380,000/yr in power &bull; 18.5t CO₂ offset</span>
+          </div>
+          <div class="flagship-body">
+            <span class="pcard-status">Renewable Energy &amp; Supply Resilience</span>
+            <h3>Maravilla Solar-Hybrid Pumping Station</h3>
+            <p>High-efficiency solar arrays power our deep well submersible pump during peak sunlight hours, keeping reservoir tanks full even during CEBECO power interruptions and stabilizing water tariffs.</p>
+
+            <div class="project-facts">
+              <div class="fact"><small>Completion</small><b>85%</b></div>
+              <div class="fact"><small>Solar Array</small><b>42.5 kWp</b></div>
+              <div class="fact"><small>Target Finish</small><b>Dec 2026</b></div>
+              <div class="fact"><small>Beneficiaries</small><b>1,300+ homes</b></div>
+            </div>
+
+            <ol class="milestones" data-done="68%" aria-label="Project milestones">
+              <li class="milestone done"><div class="ms-dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div><div class="ms-title">Design &amp; LWUA</div><div class="ms-date">Feb 2026</div></li>
+              <li class="milestone done"><div class="ms-dot"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div><div class="ms-title">Civil &amp; Mounting</div><div class="ms-date">May 2026</div></li>
+              <li class="milestone current"><div class="ms-dot"></div><div class="ms-title">Array Testing</div><div class="ms-date">Oct 2026</div></li>
+              <li class="milestone"><div class="ms-dot"></div><div class="ms-title">Full Operation</div><div class="ms-date">Dec 2026</div></li>
+            </ol>
+            <span class="updated">Progress verified by TAWD Engineering &bull; Oct 2026</span>
+          </div>
+        </article>
+
+        <!-- Other projects -->
+        <div class="project-cards">
+          <article class="pcard reveal">
+            <div class="pcard-media">
+              <img src="assets/maintenance.jpg" alt="Crew installing upland transmission pipeline" loading="lazy">
+              <span class="pcard-loc">Kanlim-ao &amp; Kantubaon</span>
+            </div>
+            <div class="pcard-body">
+              <div class="ring" data-progress="68" data-label="68%"></div>
+              <div>
+                <span class="pcard-status">In progress</span>
+                <h4>Upland Transmission Line Extension</h4>
+                <p>6.4 km of food-grade HDPE pipeline bringing pressurized tap water to upland sitios.</p>
+                <span class="updated">450+ new households</span>
+              </div>
+            </div>
+          </article>
+          <article class="pcard reveal">
+            <div class="pcard-media">
+              <img src="assets/water-lab.jpg" alt="Water quality laboratory equipment" loading="lazy">
+              <span class="pcard-loc">Poblacion Main Lab</span>
+            </div>
+            <div class="pcard-body">
+              <div class="ring" data-progress="95" data-label="95%"></div>
+              <div>
+                <span class="pcard-status complete">Final calibration</span>
+                <h4>Water Quality Laboratory Upgrade</h4>
+                <p>Digital turbidimeters and incubator units for faster in-house bacteriological testing.</p>
+                <span class="updated">All 12 barangays</span>
+              </div>
+            </div>
+          </article>
+          <article class="pcard reveal">
+            <div class="pcard-media">
+              <img src="assets/hero-bg.jpg" alt="Tabuelan watershed and spring source" loading="lazy">
+              <span class="pcard-loc">Upland Catchments</span>
+            </div>
+            <div class="pcard-body">
+              <div class="ring" data-progress="55" data-label="55%" style="--ring-color: var(--leaf-600);"></div>
+              <div>
+                <span class="pcard-status planned">Ongoing Eco-Drive</span>
+                <h4>Watershed Buffer Reforestation</h4>
+                <p>Planting 5,000 native trees with barangay volunteers to safeguard spring recharge zones.</p>
+                <span class="updated">2,640 / 5,000 planted</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES (Friendly Quick Help) ================= -->
+    <section class="help" id="help">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Concessionaire Services</span>
+            <h2 class="section-title">How can we <em>help your household</em> today?</h2>
+          </div>
+        </div>
+        <div class="help-grid">
+          <a href="#toolkit" class="help-card js-tool-link reveal" data-tool="apply">
+            <div class="help-icon" style="background: var(--sea-100); color: var(--sea-700);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Apply for a connection</h3>
+            <p>Check the interactive requirement checklist and 4 Citizen's Charter steps for new connections.</p>
+            <span class="link-arrow">Checklist &amp; steps &rarr;</span>
+          </a>
+          <a href="#toolkit" class="help-card js-tool-link reveal" data-tool="estimator">
+            <div class="help-icon" style="background: var(--leaf-100); color: var(--leaf-700);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Water rates &amp; calculator</h3>
+            <p>Compute your estimated monthly bill with Senior/PWD discount and daily liter breakdown.</p>
+            <span class="link-arrow">Open calculator &rarr;</span>
+          </a>
+          <a href="#visit" class="help-card reveal">
+            <div class="help-icon" style="background: var(--sun-100); color: var(--sun-600);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+            </div>
+            <h3>Pay at our cashier</h3>
+            <p>Pay at our Sitio Ibabao, Poblacion office, Monday to Friday, 8 AM – 5 PM with no noon break.</p>
+            <span class="link-arrow">Location &amp; hours &rarr;</span>
+          </a>
+          <button type="button" class="help-card js-open-report reveal" style="text-align:left; font: inherit; cursor: pointer;">
+            <div class="help-icon" style="background: var(--coral-100); color: var(--coral-600);">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            </div>
+            <h3>Report a leak or issue</h3>
+            <p>Spotted a street pipe leak or low pressure? Alert our maintenance team for rapid dispatch.</p>
+            <span class="link-arrow">Send a report &rarr;</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ECO CTA BAND ================= -->
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-inner reveal">
+          <div>
+            <h2>Every drop saved protects Tabuelan's springs for the next generation.</h2>
+            <p>Help us keep Non-Revenue Water low—report street leaks early or join our barangay watershed tree-planting drives.</p>
+          </div>
+          <div class="cta-actions">
+            <button type="button" class="btn btn-coral js-open-report">Report a Leak</button>
+            <a href="https://www.facebook.com/p/Tabuelan-Water-District-100063686925638/" target="_blank" rel="noopener noreferrer" class="btn btn-glass">Follow TAWD on Facebook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONCESSIONAIRE TOOLKIT (4 Interactive Tabs) ================= -->
+    <section class="toolkit" id="toolkit">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Interactive Concessionaire Toolkit</span>
+            <h2 class="section-title">Network status, bill estimator &amp; <em>eco-tools</em></h2>
+            <p class="section-lead">Check live pressure across all 12 barangays, estimate your monthly bill, or track your new connection requirements.</p>
+          </div>
+          <div class="tool-tabs" role="tablist" aria-label="Toolkit">
+            <button type="button" class="tool-tab active" role="tab" aria-selected="true" aria-controls="tool-network" id="tab-network" data-tool="network">Barangay Network</button>
+            <button type="button" class="tool-tab" role="tab" aria-selected="false" aria-controls="tool-estimator" id="tab-estimator" data-tool="estimator">Bill Estimator</button>
+            <button type="button" class="tool-tab" role="tab" aria-selected="false" aria-controls="tool-apply" id="tab-apply" data-tool="apply">How to Apply</button>
+            <button type="button" class="tool-tab" role="tab" aria-selected="false" aria-controls="tool-ecotips" id="tab-ecotips" data-tool="ecotips">Water Saving Tips</button>
+          </div>
+        </div>
+
+        <!-- Panel 1: Network -->
+        <div class="tool-panel active" id="tool-network" role="tabpanel" aria-labelledby="tab-network">
+          <div class="tool-card">
+            <div class="net-toolbar">
+              <div>
+                <h3>Live water supply &amp; pressure by barangay</h3>
+                <p class="muted" style="margin-bottom:0;">Covers all 12 coastal and upland barangays of Tabuelan, Cebu.</p>
+              </div>
+              <div class="net-filter-btns" role="group" aria-label="Filter barangays by zone">
+                <button type="button" class="net-filter-btn active" data-zone="all">All 12 Barangays</button>
+                <button type="button" class="net-filter-btn" data-zone="Coastal">Coastal Zone</button>
+                <button type="button" class="net-filter-btn" data-zone="Upland">Upland Zone</button>
+              </div>
+            </div>
+            <div class="net-summary">
+              <span><i class="dot dot-ok"></i> Normal pressure (25–35 psi)</span>
+              <span><i class="dot dot-warn"></i> Scheduled work / moderate pressure</span>
+              <span><i class="dot dot-off"></i> Service interruption</span>
+              <span style="margin-left:auto; color:#8ef7e4;" id="netUpdated">Last updated: today</span>
+            </div>
+            <div class="net-grid" id="netGrid"><!-- rendered by app.js --></div>
+            <div class="toolkit-report">
+              <span>Experiencing low pressure or a leak in your sitio not shown above?</span>
+              <button type="button" class="js-open-report">Report to our field crew &rarr;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Estimator -->
+        <div class="tool-panel" id="tool-estimator" role="tabpanel" aria-labelledby="tab-estimator">
+          <div class="tool-card">
+            <div class="estimator">
+              <div>
+                <h3>Estimate your monthly water bill</h3>
+                <p class="muted">Based on LWUA-structured tiered tariff brackets. Adjust your monthly cubic meter (m³) usage below.</p>
+                <div class="field">
+                  <label for="estCategory">Connection classification</label>
+                  <select id="estCategory">
+                    <option value="residential">Residential</option>
+                    <option value="government">Government / Institutional</option>
+                    <option value="commercial">Commercial / Industrial</option>
+                    <option value="bulk">Bulk / Wholesale</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="estVolumeRange">Monthly water consumption (cubic meters / m³)</label>
+                  <div class="range-row">
+                    <input type="range" id="estVolumeRange" min="0" max="80" value="16" aria-label="Cubic meters slider">
+                    <input type="number" id="estVolume" min="0" max="500" value="16" aria-label="Cubic meters">
+                  </div>
+                </div>
+                <label class="est-check-row" for="estDiscount">
+                  <input type="checkbox" id="estDiscount">
+                  <span>Apply 5% Senior Citizen / PWD Discount (valid for residential consumption up to 30 m³)</span>
+                </label>
+                <table class="tier-table" aria-label="Rate tiers">
+                  <thead><tr><th>Consumption Bracket</th><th>Tariff Rate</th></tr></thead>
+                  <tbody id="tierBody"></tbody>
+                </table>
+              </div>
+              <div class="receipt" aria-live="polite">
+                <div class="receipt-head">
+                  <span>Monthly Bill Breakdown</span>
+                  <span class="eco-usage-badge" id="rEcoBadge">Eco-Efficient Household</span>
+                </div>
+                <div class="receipt-row"><span>Minimum charge (first 10 m³)</span><span id="rMin">₱0.00</span></div>
+                <div class="receipt-row"><span>Commodity charge (excess over 10 m³)</span><span id="rExcess">₱0.00</span></div>
+                <div class="receipt-row" id="rDiscountRow" style="display:none; color: var(--leaf-700);"><span>Senior / PWD 5% Discount</span><span id="rDiscount">-₱0.00</span></div>
+                <div class="receipt-row"><span>Total volume billed</span><span id="rVol">0 m³</span></div>
+                <div class="receipt-row receipt-total"><span>Estimated Total</span><span id="rTotal">₱0.00</span></div>
+                <div class="receipt-liters" id="rLiters">
+                  💧 Equivalent to <strong>16,000 liters/month</strong> (~533 liters/day for your household).
+                </div>
+                <p class="receipt-note">Note: For estimation purposes only. Official billing statements may reflect meter maintenance fees or arrears if applicable.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Apply -->
+        <div class="tool-panel" id="tool-apply" role="tabpanel" aria-labelledby="tab-apply">
+          <div class="tool-card">
+            <h3>How to apply for a new water connection</h3>
+            <p class="muted">Four transparent steps under our Citizen's Charter (RA 11032 — Ease of Doing Business).</p>
+            <div class="steps">
+              <div class="step"><h4>Submit requirements</h4><p>File your application form at our Sitio Ibabao, Poblacion office with valid ID and barangay clearance.</p><small>~15 minutes</small></div>
+              <div class="step"><h4>Site inspection</h4><p>Our engineering inspector checks mainline proximity and pipe materials needed for your home.</p><small>Within 2 working days</small></div>
+              <div class="step"><h4>Pay connection fee</h4><p>Review the material estimate, pay at our cashier window, and sign the service contract.</p><small>Same day (~20 mins)</small></div>
+              <div class="step"><h4>Meter installation</h4><p>Our field crew installs your calibrated water meter and taps into the distribution line.</p><small>Within 3–5 days</small></div>
+            </div>
+            <div class="reqs-interactive">
+              <div class="reqs-head">
+                <strong>Interactive Requirement Readiness Checklist</strong>
+                <span id="reqStatusText" style="font-size:0.82rem; color:#8ef7e4;">0 of 4 items ready</span>
+              </div>
+              <div class="reqs-grid">
+                <label class="req-check"><input type="checkbox" class="js-req-box"> <span>1. Accomplished TAWD Service Application Form</span></label>
+                <label class="req-check"><input type="checkbox" class="js-req-box"> <span>2. One (1) Valid Government-Issued ID (with signature)</span></label>
+                <label class="req-check"><input type="checkbox" class="js-req-box"> <span>3. Barangay Certificate of Residency</span></label>
+                <label class="req-check"><input type="checkbox" class="js-req-box"> <span>4. Proof of Property Ownership / Lot Owner's Written Consent</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: Eco Water Saving Tips -->
+        <div class="tool-panel" id="tool-ecotips" role="tabpanel" aria-labelledby="tab-ecotips">
+          <div class="tool-card">
+            <h3>Household water conservation &amp; bill savings guide</h3>
+            <p class="muted">Simple habits that lower your monthly water bill while preserving Tabuelan's spring aquifers during dry months.</p>
+            <div class="eco-tips-grid">
+              <div class="eco-tip-card">
+                <span class="eco-tip-badge">Saves ~4.5 m³ / month (₱110+)</span>
+                <h4>Fix a dripping faucet or toilet flapper</h4>
+                <p>A single leaking toilet valve or dripping tap wastes up to 150 liters a day. Tightening washers or replacing a worn flapper pays for itself in one billing cycle.</p>
+              </div>
+              <div class="eco-tip-card">
+                <span class="eco-tip-badge">Saves ~3.0 m³ / month (₱75+)</span>
+                <h4>Harvest rainwater for plants &amp; cleaning</h4>
+                <p>Use covered rainwater drums for watering backyard gardens, washing motorcycles, and flushing outdoor areas instead of treated tap water.</p>
+              </div>
+              <div class="eco-tip-card">
+                <span class="eco-tip-badge">Protects Community Pressure</span>
+                <h4>Store emergency water before advisories</h4>
+                <p>Keep clean, food-grade covered containers ready during scheduled nighttime line flushing so your family has safe drinking water at all times.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WATER QUALITY + TRANSPARENCY ================= -->
+    <section class="trust" id="trust">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Safe Water &amp; Good Governance</span>
+            <h2 class="section-title">Water you can <em>trust</em>, a district you can <em>verify</em></h2>
+          </div>
+        </div>
+        <div class="trust-grid">
+          <div class="quality-card reveal">
+            <div>
+              <h3>Tested &amp; safe to drink</h3>
+              <p style="font-size:.92rem; color: var(--ink-500);">Tested regularly against the Philippine National Standards for Drinking Water (PNSDW 2017).</p>
+              <div class="q-params">
+                <div class="q-param"><small>Total Coliform</small><b>0 MPN/100mL</b><span>Pass</span></div>
+                <div class="q-param"><small>Fecal / E. coli</small><b>Absent</b><span>Pass</span></div>
+                <div class="q-param"><small>Chlorine Residual</small><b>0.4–1.2 ppm</b><span>Optimal</span></div>
+                <div class="q-param"><small>Turbidity &amp; pH</small><b>0.6 NTU &bull; 7.4</b><span>Clear</span></div>
+              </div>
+              <span class="updated">Latest laboratory certification: October 2026</span>
+            </div>
+            <img src="assets/water-lab.jpg" alt="Water sample testing" loading="lazy">
+          </div>
+
+          <div class="gov-card reveal">
+            <h3>Transparency &amp; public compliance</h3>
+            <p style="font-size:.92rem; color: var(--ink-500);">Open access to budgets, procurement notices, and service standards in compliance with DBM, LWUA, and ARTA.</p>
+            <div class="gov-list">
+              <a href="#trust" class="gov-item"><div class="gov-icon" style="background:var(--sun-100); color:var(--sun-600);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.3L7 22l5-3 5 3-1.2-8.7"/></svg></div><div><b>Transparency Seal</b><small>Annual reports &amp; COB</small></div></a>
+              <a href="#trust" class="gov-item"><div class="gov-icon" style="background: var(--sea-100); color: var(--sea-700);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></div><div><b>FOI Philippines</b><small>Freedom of Information</small></div></a>
+              <a href="#trust" class="gov-item"><div class="gov-icon" style="background: var(--coral-100); color: var(--coral-600);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></div><div><b>Bids &amp; Awards (BAC)</b><small>PhilGEPS invitations</small></div></a>
+              <a href="#trust" class="gov-item"><div class="gov-icon" style="background: var(--leaf-100); color: var(--leaf-700);"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><div><b>Citizen's Charter</b><small>RA 11032 service guide</small></div></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= VISIT US ================= -->
+    <section class="visit" id="visit">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow"><i class="eyebrow-dot"></i> Visit or Contact Us</span>
+            <h2 class="section-title">We're right here in <em>Poblacion, Tabuelan</em></h2>
+          </div>
+        </div>
+        <div class="visit-grid">
+          <div class="visit-info">
+            <div class="visit-row">
+              <div class="visit-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div><h4>Administration &amp; Billing Office</h4><p>Sitio Ibabao, Poblacion, Tabuelan, Cebu 6044<br><a href="https://www.bing.com/maps/default.aspx?v=2&amp;where1=10.82292%2C%20123.87441" target="_blank" rel="noopener noreferrer">Open in Maps &rarr;</a></p></div>
+            </div>
+            <div class="visit-row">
+              <div class="visit-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <div><h4>Office &amp; Cashier Hours</h4><p>Monday – Friday, 8:00 AM – 5:00 PM (No Noon Break)<br>Field maintenance crew on standby for urgent mainline leaks</p></div>
+            </div>
+            <div class="visit-row">
+              <div class="visit-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div><h4>Direct Hotline &amp; Email</h4><p><a href="tel:0324619206">(032) 461 9206</a> &bull; <a href="mailto:tawd.cebu@yahoo.com">tawd.cebu@yahoo.com</a><br><a href="https://www.facebook.com/p/Tabuelan-Water-District-100063686925638/" target="_blank" rel="noopener noreferrer">Official Facebook Page &rarr;</a></p></div>
+            </div>
+          </div>
+          <div class="visit-map">
+            <iframe title="Map of Tabuelan Water District office" loading="lazy"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=123.8664%2C10.8169%2C123.8824%2C10.8289&amp;layer=mapnik&amp;marker=10.82292%2C123.87441"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="assets/logo-landscape-transparent.png" alt="Tabuelan Water District" class="footer-logo" width="160" height="46">
+          <div class="footer-gov">Province of Cebu &bull; Republic of the Philippines</div>
+          <div class="footer-gocc">Government-Owned and Controlled Corporation (GOCC)</div>
+          <p>Mandated under Presidential Decree No. 198 (Provincial Water Utilities Act of 1973) to deliver safe, sustainable water and protect Tabuelan's watersheds.</p>
+          <a href="https://www.facebook.com/p/Tabuelan-Water-District-100063686925638/" target="_blank" rel="noopener noreferrer" class="footer-social">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            Tabuelan Water District
+          </a>
+        </div>
+        <div>
+          <h5>Community Portal</h5>
+          <ul>
+            <li><a href="#watershed">Watershed &amp; Story</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#projects">Green Projects</a></li>
+            <li><a href="#help">Services</a></li>
+            <li><a href="#toolkit">Rates &amp; Toolkit</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Governance</h5>
+          <ul>
+            <li><a href="#trust">Transparency Seal</a></li>
+            <li><a href="#trust">Freedom of Information</a></li>
+            <li><a href="#trust">Citizen's Charter</a></li>
+            <li><a href="#trust">Bids &amp; Awards (PhilGEPS)</a></li>
+            <li><a href="https://lwua.gov.ph" target="_blank" rel="noopener noreferrer">LWUA Official Portal</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5>Visit Us</h5>
+          <ul>
+            <li>Sitio Ibabao, Poblacion, Tabuelan, Cebu, Philippines 6044</li>
+            <li><a href="tel:0324619206">(032) 461 9206</a></li>
+            <li><a href="mailto:tawd.cebu@yahoo.com">tawd.cebu@yahoo.com</a></li>
+            <li>Mon – Fri, 8:00 AM – 5:00 PM (No Noon Break)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Tabuelan Water District (TAWD). All rights reserved.</span>
+        <span>Concept 3: Coastal Community &amp; Eco-Tropical Aqua Modern</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= Report a Leak Modal ================= -->
+  <div class="modal" id="reportModal" role="dialog" aria-modal="true" aria-labelledby="reportTitle" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h4 id="reportTitle">Report a leak or water concern</h4>
+        <button type="button" class="modal-close" id="reportClose" aria-label="Close">&times;</button>
+      </div>
+      <form id="reportForm">
+        <div class="modal-body">
+          <div class="field"><label for="rName">Your full name</label><input id="rName" type="text" required autocomplete="name" placeholder="Juan dela Cruz"></div>
+          <div class="field"><label for="rPhone">Mobile number</label><input id="rPhone" type="tel" required autocomplete="tel" placeholder="09XX XXX XXXX"></div>
+          <div class="field">
+            <label for="rBrgy">Barangay</label>
+            <select id="rBrgy" required><option value="">Select barangay…</option></select>
+          </div>
+          <div class="field">
+            <label for="rType">Nature of concern</label>
+            <select id="rType" required>
+              <option>Mainline / street pipe leak</option>
+              <option>Low pressure or no water</option>
+              <option>Cloudy or discolored water</option>
+              <option>Meter leak or damaged standpipe</option>
+              <option>Watershed concern / illegal tapping</option>
+              <option>Other concern</option>
+            </select>
+          </div>
+          <div class="field"><label for="rWhere">Sitio &amp; nearest landmark</label><textarea id="rWhere" rows="3" required placeholder="e.g., Near Brgy. Hall or crossing chapel…"></textarea></div>
+        </div>
+        <div class="modal-foot">
+          <button type="button" class="btn btn-outline" id="reportCancel">Cancel</button>
+          <button type="submit" class="btn btn-coral">Submit Report</button>
+        </div>
+      </form>
+      <div class="report-success" id="reportSuccess" aria-live="polite">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--leaf-600)" stroke-width="2.2" style="margin:0 auto;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <h4 style="font-family:var(--font-display); font-size:1.4rem; color:var(--sea-900); margin-top:0.75rem;">Daghang salamat! Report received.</h4>
+        <div class="report-ref" id="reportRefCode">TAWD-000000</div>
+        <p style="font-size:0.9rem; color:var(--ink-500); max-width:380px; margin:0 auto 1.25rem;">Our Poblacion dispatch desk has logged your report for field verification.</p>
+        <button type="button" class="btn btn-aqua" id="reportDoneBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Announcement Reader Modal ================= -->
+  <div class="modal" id="newsModal" role="dialog" aria-modal="true" aria-labelledby="newsModalTitle" aria-hidden="true">
+    <div class="modal-box">
+      <div class="modal-head">
+        <h4 id="newsModalTitle">Public Advisory</h4>
+        <button type="button" class="modal-close" id="newsModalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <span class="updated" id="newsModalDate" style="margin-top:0; margin-bottom:0.75rem;">Oct 2026</span>
+        <p id="newsModalBody" style="font-size:0.96rem; color:var(--ink-700); line-height:1.7;"></p>
+      </div>
+      <div class="modal-foot">
+        <button type="button" class="btn btn-aqua" id="newsModalOk">Close Advisory</button>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>

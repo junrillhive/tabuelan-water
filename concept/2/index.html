@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuelan Water District — Official Portal | Concept 2</title>
+  <meta name="description" content="Official public website for Tabuelan Water District (TAWD), Province of Cebu. Safe drinking water, announcements, infrastructure progress, water rates, and public assistance.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= Top Government Status Bar ================= -->
+  <aside class="c2-topbar" aria-label="Official Top Bar">
+    <div class="container c2-topbar-inner">
+      <div class="c2-topbar-left">
+        <span class="ph-indicator">
+          <span class="ph-flag-dot" aria-hidden="true"></span>
+          Republic of the Philippines
+        </span>
+        <span class="pst-badge" id="c2PstClock">Loading PST...</span>
+      </div>
+
+      <div class="c2-topbar-right">
+        <span class="office-status-chip">
+          <span class="status-dot-pulse" aria-hidden="true"></span>
+          Office Open Today &bull; 8:00 AM &ndash; 5:00 PM (No Noon Break)
+        </span>
+        <a href="tel:0324619206" class="topbar-contact-item" title="Emergency Water Hotline">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          <span>(032) 461 9206</span>
+        </a>
+        <a href="mailto:tawd.cebu@yahoo.com" class="topbar-contact-item" title="Official Email">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>tawd.cebu@yahoo.com</span>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================= Header Navbar with Official Landscape Logo ================= -->
+  <header class="c2-header" id="c2Header">
+    <div class="container c2-header-inner">
+      <a href="#home" class="c2-brand" title="Tabuelan Water District Home">
+        <img src="assets/logo-landscape-transparent.png" alt="Tabuelan Water District" class="c2-logo-landscape" height="52">
+      </a>
+
+      <nav class="c2-nav" id="c2Nav" aria-label="Main Navigation">
+        <ul class="c2-nav-list">
+          <li class="c2-nav-item">
+            <a href="#home" class="c2-nav-link active">Home</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#announcements" class="c2-nav-link">Announcements</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#projects" class="c2-nav-link">Projects &amp; Progress</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#services" class="c2-nav-link">Services</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#technical-center" class="c2-nav-link">Utilities &amp; Rates</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#quality" class="c2-nav-link">Water Quality</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#transparency" class="c2-nav-link">Transparency</a>
+          </li>
+          <li class="c2-nav-item">
+            <a href="#contact" class="c2-nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="c2-header-cta">
+        <button type="button" class="btn-emergency-report open-c2-report-modal" title="Report a water leak or emergency">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+          <span>Report a Leak</span>
+        </button>
+        <button type="button" class="c2-mobile-toggle" id="c2MobileToggle" aria-label="Toggle navigation">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Welcoming Landing Hero ================= -->
+  <section class="c2-welcome-hero" id="home">
+    <div class="hero-gradient-orb" aria-hidden="true"></div>
+    <div class="hero-gradient-orb-left" aria-hidden="true"></div>
+    
+    <div class="container">
+      <div class="c2-welcome-grid">
+        <!-- Welcoming Copy -->
+        <div>
+          <div class="welcome-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <span>Municipality of Tabuelan, Cebu &bull; LWUA Category D</span>
+          </div>
+
+          <h1 class="welcome-headline">
+            Pure, Safe Water for <span>Every Tabuelan Family.</span>
+          </h1>
+
+          <p class="welcome-subtext">
+            Dedicated to providing clean, laboratory-tested drinking water across our coastal and upland barangays. Experience dependable municipal service, community infrastructure projects, and transparent utility governance.
+          </p>
+
+          <div class="welcome-cta-group">
+            <a href="#projects" class="c2-btn-primary">
+              <span>View Projects &amp; Progress</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#announcements" class="c2-btn-secondary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              <span>Latest Advisories</span>
+            </a>
+            <button type="button" class="c2-btn-secondary open-c2-report-modal" style="border-color:#bae6fd; color:#0284c7; background:#f0f9ff;">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              <span>Report a Leak</span>
+            </button>
+          </div>
+
+          <div class="welcome-trust-strip">
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>100% PNSDW Safety Certified</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>4,200+ Connected Households</span>
+            </div>
+            <div class="trust-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>No Noon Break Cashier Counter</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Welcoming Community Photo -->
+        <div>
+          <div class="hero-visual-card">
+            <img src="assets/family-water.jpg" alt="Tabuelan family enjoying clean drinking water">
+            <div class="hero-floating-quote">
+              <div class="quote-title">"Clean Water in Every Home &amp; School"</div>
+              <div class="quote-sub">Serving all 12 coastal and upland barangays of Tabuelan, Cebu with continuous potable tap water.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 1: Featured Announcements & Advisories ================= -->
+  <section class="c2-announcements-section" id="announcements">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Public Noticeboard &amp; Updates</span>
+        <h2 class="c2-section-title">Latest Announcements &amp; District Advisories</h2>
+        <p class="c2-section-subtitle">
+          Real-time updates on scheduled water maintenance, line flushing schedules, discount reminders, and community advisories.
+        </p>
+      </div>
+
+      <div class="announcements-showcase-grid">
+        <!-- Spotlight Bulletin (Large Card) -->
+        <article class="spotlight-announcement-card">
+          <div>
+            <div class="spotlight-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+              <span>Featured District Advisory</span>
+            </div>
+
+            <h3 class="spotlight-title">
+              Annual Distribution Main Disinfection &amp; Scheduled Flushing for North Tabuelan Barangays
+            </h3>
+
+            <p class="spotlight-text">
+              In full compliance with Department of Health (DOH) water safety standards, Tabuelan Water District technical personnel will conduct scheduled pressure flushing and pipeline sanitization. Concessionaires in affected areas are advised to store sufficient potable water prior to scheduled work. Water supply will normalize immediately following flushing.
+            </p>
+          </div>
+
+          <div class="spotlight-meta-box">
+            <div>
+              <strong>Coverage:</strong> Sitio Ibabao, Maravilla, &amp; Tabunok
+            </div>
+            <div>
+              <strong>Schedule:</strong> Thursday, 10:00 PM &ndash; 4:00 AM (Off-Peak)
+            </div>
+            <div>
+              <span class="bulletin-badge badge-warning" style="margin:0;">Scheduled Maintenance</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Side Bulletin List -->
+        <div class="announcements-side-list">
+          <!-- Bulletin 1 -->
+          <article class="bulletin-card">
+            <div>
+              <span class="bulletin-badge badge-success">Completed &bull; Repaired</span>
+              <h4 class="bulletin-title">Pipeline Leak at Poblacion Crossing Repaired — Full Pressure Restored</h4>
+              <p class="bulletin-desc">
+                Our emergency repair crew successfully replaced the 75mm damaged transmission section. Pressure normalized across all connected households by 4:15 PM.
+              </p>
+            </div>
+            <div class="bulletin-date">Oct 11, 2026 &bull; Operations &amp; Maintenance</div>
+          </article>
+
+          <!-- Bulletin 2 -->
+          <article class="bulletin-card">
+            <div>
+              <span class="bulletin-badge badge-info">Community Notice</span>
+              <h4 class="bulletin-title">Senior Citizen &amp; PWD 5% Water Discount Annual Renewal</h4>
+              <p class="bulletin-desc">
+                Qualified concessionaires consuming 30 cu.m or less are invited to submit requirements at the Poblacion Cashier counter to ensure uninterrupted discounts.
+              </p>
+            </div>
+            <div class="bulletin-date">Oct 08, 2026 &bull; Commercial Division</div>
+          </article>
+
+          <!-- Bulletin 3 -->
+          <article class="bulletin-card">
+            <div>
+              <span class="bulletin-badge badge-warning">Testing Notice</span>
+              <h4 class="bulletin-title">Maravilla Solar Booster Pump Hydraulic Commissioning</h4>
+              <p class="bulletin-desc">
+                Operational test pumping for the newly installed solar booster will run between 1:00 PM and 3:00 PM. No widespread supply interruption is expected.
+              </p>
+            </div>
+            <div class="bulletin-date">Oct 05, 2026 &bull; Engineering Division</div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 2: Projects, Milestones & Progress ================= -->
+  <section class="c2-projects-section" id="projects">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Capital Development &amp; Infrastructure</span>
+        <h2 class="c2-section-title">Projects, Milestones &amp; Progress</h2>
+        <p class="c2-section-subtitle">
+          Investing in green solar-powered pumping systems, pipeline network expansions, and modernized water quality testing to support Tabuelan's growing households and ecotourism.
+        </p>
+      </div>
+
+      <!-- District Metrics Strip -->
+      <div class="projects-stats-banner">
+        <div class="pstat-item">
+          <div class="pstat-num">4,200+</div>
+          <div class="pstat-label">Concessionaire Households Served</div>
+        </div>
+        <div class="pstat-item">
+          <div class="pstat-num">15.2 km</div>
+          <div class="pstat-label">Modern HDPE Pipelines Installed</div>
+        </div>
+        <div class="pstat-item">
+          <div class="pstat-num">99.8%</div>
+          <div class="pstat-label">PNSDW Bacteriological Safety Index</div>
+        </div>
+        <div class="pstat-item">
+          <div class="pstat-num">12 / 12</div>
+          <div class="pstat-label">Tabuelan Barangays Connected</div>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: Solar Pumping Station -->
+        <article class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/solar-pump.jpg" alt="Solar-powered water pumping station" class="project-thumb">
+            <span class="project-status-chip">Phase 2 Active &bull; 85%</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <span class="project-category">Renewable Energy &bull; Sustainability</span>
+              <h3 class="project-title">Sitio Ibabao &amp; Maravilla Solar Pumping Station</h3>
+              <p class="project-desc">
+                Transitioning deep well extraction to high-efficiency solar photovoltaic arrays. This green infrastructure mitigates grid power outages, stabilizes water production costs, and guarantees uninterrupted daytime pumping.
+              </p>
+            </div>
+            <div class="progress-track-wrapper">
+              <div class="progress-labels">
+                <span>Infrastructure Completion</span>
+                <span class="progress-percent">85%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: Transmission Line Expansion -->
+        <article class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/maintenance.jpg" alt="Field technicians laying water distribution lines" class="project-thumb">
+            <span class="project-status-chip">Underway &bull; 68%</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <span class="project-category">Distribution Network Expansion</span>
+              <h3 class="project-title">Upland Barangay Transmission Line Extension</h3>
+              <p class="project-desc">
+                Laying 6.4 kilometers of electrofusion-welded HDPE transmission pipes to connect upland agricultural communities in Kantabogon and Kan-lunsing to the central Poblacion pressure grid.
+              </p>
+            </div>
+            <div class="progress-track-wrapper">
+              <div class="progress-labels">
+                <span>Pipeline Laying &amp; Pressure Tapping</span>
+                <span class="progress-percent">68%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 68%;"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Water Lab Modernization -->
+        <article class="project-card">
+          <div class="project-thumb-wrap">
+            <img src="assets/water-lab.jpg" alt="DOH water testing laboratory equipment" class="project-thumb">
+            <span class="project-status-chip">Final Testing &bull; 95%</span>
+          </div>
+          <div class="project-body">
+            <div>
+              <span class="project-category">Public Health &bull; Laboratory Upgrade</span>
+              <h3 class="project-title">Central Water Quality Testing Laboratory</h3>
+              <p class="project-desc">
+                Modernizing our testing facility with automated spectrophotometers and microbiological incubators to ensure daily 24-hour bacteriological and chemical compliance with the Philippine National Standards for Drinking Water.
+              </p>
+            </div>
+            <div class="progress-track-wrapper">
+              <div class="progress-labels">
+                <span>Equipment Calibration &amp; DOH Audit</span>
+                <span class="progress-percent">95%</span>
+              </div>
+              <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 3: Concessionaire Services / Quick Access ================= -->
+  <section class="c2-services-section" id="services">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Concessionaire Assistance</span>
+        <h2 class="c2-section-title">Essential Water Services &amp; Support</h2>
+        <p class="c2-section-subtitle">
+          Streamlined public assistance designed for prompt, hassle-free municipal service for residential, commercial, and institutional consumers.
+        </p>
+      </div>
+
+      <div class="service-shortcuts-grid">
+        <!-- Service 1 -->
+        <div class="service-box">
+          <div>
+            <div class="service-icon-bubble" style="background:#e0f2fe; color:#0284c7;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7.5" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+            </div>
+            <h3 class="service-title">Apply for Connection</h3>
+            <p class="service-desc">Complete requirements guide, site tapping survey procedure, and 4-step connection roadmap.</p>
+          </div>
+          <a href="#technical-center" class="service-link">View 4-Step Process &rarr;</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-box">
+          <div>
+            <div class="service-icon-bubble" style="background:#dcfce7; color:#15803d;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3 class="service-title">Water Rates &amp; Tariffs</h3>
+            <p class="service-desc">Transparent LWUA-approved residential and commercial bracket schedules with bill simulator.</p>
+          </div>
+          <a href="#technical-center" class="service-link">Calculate Your Bill &rarr;</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-box">
+          <div>
+            <div class="service-icon-bubble" style="background:#fef3c7; color:#b45309;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            </div>
+            <h3 class="service-title">Citizen's Charter</h3>
+            <p class="service-desc">Guaranteed turnaround times and service level commitments under Republic Act 11032.</p>
+          </div>
+          <a href="#transparency" class="service-link">View Commitments &rarr;</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-box">
+          <div>
+            <div class="service-icon-bubble" style="background:#ccfbf1; color:#0f766e;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            </div>
+            <h3 class="service-title">Cashier &amp; Payment</h3>
+            <p class="service-desc">Convenient on-site bill payments at Sitio Ibabao Poblacion open 8:00 AM – 5:00 PM with No Noon Break.</p>
+          </div>
+          <a href="#contact" class="service-link">Cashier Schedule &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 4: Technical & Utility Center (Placed at the Bottom!) ================= -->
+  <section class="c2-technical-section" id="technical-center">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Concessionaire Utilities &amp; Monitoring</span>
+        <h2 class="c2-section-title">Live Network Status &amp; Water Bill Estimator</h2>
+        <p class="c2-section-subtitle">
+          Monitor real-time water pressure across all 12 Tabuelan service zones and calculate your estimated monthly consumption based on official LWUA tariffs.
+        </p>
+      </div>
+
+      <!-- Split Layout: Network Status on Left, Calculator on Right -->
+      <div class="technical-split-layout">
+        <!-- Panel 1: Live Barangay Network Pressure -->
+        <div class="tech-panel">
+          <div class="tech-panel-header">
+            <h3 class="tech-panel-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+              <span>Live Barangay Network Pressure</span>
+            </h3>
+            <span class="network-pulse-chip">
+              <span class="status-dot-pulse" style="background:#059669;" aria-hidden="true"></span>
+              92% Normal
+            </span>
+          </div>
+
+          <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:1rem;">
+            Real-time pressure readings across municipal transmission zones reported by field loggers:
+          </p>
+
+          <div class="barangay-status-list" id="barangayStatusList">
+            <!-- Dynamically populated by app.js -->
+          </div>
+
+          <div style="margin-top:1.25rem; padding-top:1rem; border-top:1px solid var(--surface-border); display:flex; justify-content:space-between; align-items:center; font-size:0.85rem;">
+            <span style="color:var(--text-muted);">Experiencing pressure loss or a pipe break?</span>
+            <button type="button" class="open-c2-report-modal" style="background:none; border:none; color:var(--brand-ocean); font-weight:700; cursor:pointer; text-decoration:underline;">
+              Report a Leak &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Panel 2: Interactive Rates Calculator -->
+        <div class="tech-panel">
+          <div class="tech-panel-header">
+            <h3 class="tech-panel-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="18"></line><path d="M16 10h.01"></path><path d="M12 10h.01"></path><path d="M8 10h.01"></path><path d="M12 14h.01"></path><path d="M8 14h.01"></path><path d="M12 18h.01"></path><path d="M8 18h.01"></path></svg>
+              <span>Instant Water Bill Estimator</span>
+            </h3>
+            <span style="font-size:0.75rem; font-weight:700; color:#0369a1; background:#e0f2fe; padding:0.2rem 0.6rem; border-radius:var(--radius-pill);">
+              LWUA Approved
+            </span>
+          </div>
+
+          <!-- Category Selector Tabs -->
+          <div class="rates-pill-tabs" style="margin-bottom:1rem;">
+            <button type="button" class="rates-pill-btn active" data-category="residential">Residential</button>
+            <button type="button" class="rates-pill-btn" data-category="commercial_b">Commercial B</button>
+            <button type="button" class="rates-pill-btn" data-category="commercial_a">Commercial A</button>
+            <button type="button" class="rates-pill-btn" data-category="institutional">Institutional</button>
+          </div>
+
+          <!-- Calculator Input Form -->
+          <div class="c2-field-group">
+            <label for="c2CalcCategory" class="c2-label">Consumer Category</label>
+            <select id="c2CalcCategory" class="c2-select">
+              <option value="residential">Residential / Domestic (1/2")</option>
+              <option value="commercial_b">Commercial B (Sari-Sari Store / Small)</option>
+              <option value="commercial_a">Commercial A (Hotels, Resorts, Eateries)</option>
+              <option value="institutional">Government &amp; Institutional</option>
+            </select>
+          </div>
+
+          <div class="c2-field-group">
+            <label for="c2CalcVolume" class="c2-label">Monthly Volume (Cubic Meters &ndash; cu.m)</label>
+            <input type="number" id="c2CalcVolume" class="c2-input" value="18" min="0" max="250">
+          </div>
+
+          <!-- Computed Receipt Card -->
+          <div class="c2-receipt-card">
+            <div class="c2-receipt-header">Estimated Monthly Computation</div>
+            <div class="c2-receipt-row">
+              <span>Base Minimum (0 &ndash; 10 cu.m):</span>
+              <span id="c2BaseCharge">₱215.00</span>
+            </div>
+            <div class="c2-receipt-row">
+              <span>Incremental Volume Charge:</span>
+              <span id="c2ExcessCharge">₱196.00</span>
+            </div>
+            <div class="c2-receipt-row">
+              <span>Meter Maintenance Fee:</span>
+              <span id="c2MaintFee">₱15.00</span>
+            </div>
+            <div class="c2-receipt-row c2-receipt-total">
+              <span>Estimated Bill:</span>
+              <span class="c2-total-price" id="c2TotalBill">₱426.00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4-Stage Connection Stepper Box -->
+      <div class="tech-stepper-box">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+          <div>
+            <h3 style="font-family:var(--font-display); font-size:1.35rem; font-weight:700; color:var(--brand-deep); margin-bottom:0.25rem;">
+              How to Apply for a Water Service Connection
+            </h3>
+            <p style="font-size:0.875rem; color:var(--text-secondary);">
+              Guaranteed standard processing timeline under our Citizen's Charter (RA 11032).
+            </p>
+          </div>
+          <a href="#contact" class="c2-btn-secondary" style="font-size:0.85rem; padding:0.6rem 1rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download Connection Checklist (PDF)</span>
+          </a>
+        </div>
+
+        <div class="c2-stepper-wrapper">
+          <div class="c2-step-card">
+            <div class="c2-step-num">01</div>
+            <h4 class="c2-step-title">Submit Application</h4>
+            <p class="c2-step-text">
+              Fill out the Service Application Form at the TAWD office in Sitio Ibabao Poblacion with 1 valid ID and proof of property/barangay residency clearance.
+            </p>
+          </div>
+
+          <div class="c2-step-card">
+            <div class="c2-step-num">02</div>
+            <h4 class="c2-step-title">Site Inspection</h4>
+            <p class="c2-step-text">
+              Our technical field inspector conducts an on-site survey to verify distance to the nearest distribution main and calculate materials needed within 48 hours.
+            </p>
+          </div>
+
+          <div class="c2-step-card">
+            <div class="c2-step-num">03</div>
+            <h4 class="c2-step-title">Fee Assessment</h4>
+            <p class="c2-step-text">
+              Review your official quotation, settle connection fees at the Poblacion cashier, and attend the brief 15-minute consumer orientation on meter care.
+            </p>
+          </div>
+
+          <div class="c2-step-card">
+            <div class="c2-step-num">04</div>
+            <h4 class="c2-step-title">Meter Installation</h4>
+            <p class="c2-step-text">
+              Our plumbing crew installs your certified brass meter and connects the service line directly to your residence with active flow testing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 5: Water Quality & Safety Guarantee ================= -->
+  <section class="c2-quality-section" id="quality">
+    <div class="container">
+      <div class="c2-quality-grid">
+        <div class="c2-quality-visual">
+          <img src="assets/water-lab.jpg" alt="DOH Certified Water Quality Laboratory">
+          <div class="quality-floating-chip">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>DOH &amp; LWUA Safety Certified</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="c2-section-tag">Public Health Guarantee</span>
+          <h2 class="c2-section-title">Tested Safe, 100% Compliant with PNSDW</h2>
+          <p class="c2-section-subtitle">
+            Every drop of water distributed in Tabuelan undergoes mandatory physical, chemical, and microbiological analysis under the Philippine National Standards for Drinking Water.
+          </p>
+
+          <div class="quality-parameters-list">
+            <div class="param-card">
+              <div class="param-name">Total Coliforms</div>
+              <div class="param-value">0 MPN/100mL</div>
+              <span class="param-badge">&#10003; 100% Negative (Safe)</span>
+            </div>
+            <div class="param-card">
+              <div class="param-name">Fecal Coliforms / E. Coli</div>
+              <div class="param-value">0 MPN/100mL</div>
+              <span class="param-badge">&#10003; 100% Negative (Safe)</span>
+            </div>
+            <div class="param-card">
+              <div class="param-name">Residual Chlorine</div>
+              <div class="param-value">0.30 &ndash; 1.50 ppm</div>
+              <span class="param-badge">&#10003; Continuous Disinfection</span>
+            </div>
+            <div class="param-card">
+              <div class="param-name">Average Turbidity</div>
+              <div class="param-value">&lt; 0.8 NTU</div>
+              <span class="param-badge">&#10003; Crystal Clear</span>
+            </div>
+          </div>
+
+          <p style="font-size:0.875rem; color:var(--text-secondary);">
+            Laboratory testing certificates are submitted monthly to the Department of Health (DOH) Regional Office VII and the Local Water Utilities Administration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 6: Philippine Transparency Seals ================= -->
+  <section class="c2-transparency-section" id="transparency">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Public Accountability</span>
+        <h2 class="c2-section-title">Good Governance &amp; Transparency</h2>
+        <p class="c2-section-subtitle">
+          Tabuelan Water District adheres strictly to national transparency mandates, open procurement procedures, and public disclosure guidelines.
+        </p>
+      </div>
+
+      <div class="c2-gov-seals-row">
+        <div class="c2-seal-card">
+          <div class="c2-seal-icon-wrap">
+            <svg viewBox="0 0 100 100" fill="none" style="width:100%; height:100%;">
+              <circle cx="50" cy="50" r="46" stroke="#0f2c4d" stroke-width="4" fill="#fff"/>
+              <circle cx="50" cy="50" r="38" stroke="#ce1126" stroke-width="2"/>
+              <path d="M50 16L53 28H65L55 35L59 47L50 40L41 47L45 35L35 28H47L50 16Z" fill="#fdb813"/>
+              <circle cx="50" cy="50" r="14" fill="#0038a8"/>
+              <text x="50" y="54" text-anchor="middle" fill="#fff" font-size="9" font-family="sans-serif" font-weight="bold">SEAL</text>
+            </svg>
+          </div>
+          <h4 class="c2-seal-name">Transparency Seal</h4>
+          <p class="c2-seal-detail">Full compliance with National Budget Circulars on proactive public disclosures.</p>
+        </div>
+
+        <div class="c2-seal-card">
+          <div class="c2-seal-icon-wrap">
+            <svg viewBox="0 0 100 100" fill="none" style="width:100%; height:100%;">
+              <circle cx="50" cy="50" r="46" stroke="#0284c7" stroke-width="4" fill="#fff"/>
+              <rect x="32" y="28" width="36" height="44" rx="4" fill="#f0f9ff" stroke="#0284c7" stroke-width="3"/>
+              <line x1="40" y1="40" x2="60" y2="40" stroke="#0284c7" stroke-width="3"/>
+              <circle cx="50" cy="62" r="10" fill="#0284c7"/>
+              <text x="50" y="66" text-anchor="middle" fill="#fff" font-size="11" font-family="sans-serif" font-weight="bold">i</text>
+            </svg>
+          </div>
+          <h4 class="c2-seal-name">Freedom of Information</h4>
+          <p class="c2-seal-detail">Exercise your constitutional right to information under Executive Order No. 2.</p>
+        </div>
+
+        <div class="c2-seal-card">
+          <div class="c2-seal-icon-wrap">
+            <svg viewBox="0 0 100 100" fill="none" style="width:100%; height:100%;">
+              <circle cx="50" cy="50" r="46" stroke="#16a34a" stroke-width="4" fill="#fff"/>
+              <path d="M28 50L44 66L72 34" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="c2-seal-name">PhilGEPS Compliance</h4>
+          <p class="c2-seal-detail">Public disclosure of annual procurement plans, bid notices, and contract awards.</p>
+        </div>
+
+        <div class="c2-seal-card">
+          <div class="c2-seal-icon-wrap">
+            <svg viewBox="0 0 100 100" fill="none" style="width:100%; height:100%;">
+              <circle cx="50" cy="50" r="46" stroke="#d97706" stroke-width="4" fill="#fff"/>
+              <path d="M35 30h30v40H35z" stroke="#d97706" stroke-width="4"/>
+              <line x1="42" y1="42" x2="58" y2="42" stroke="#d97706" stroke-width="3"/>
+            </svg>
+          </div>
+          <h4 class="c2-seal-name">Citizen's Charter</h4>
+          <p class="c2-seal-detail">Service commitments and turnaround guarantees under Republic Act 11032.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECTION 7: Contact & Office Location ================= -->
+  <section class="c2-contact-section" id="contact">
+    <div class="container">
+      <div class="c2-section-header">
+        <span class="c2-section-tag">Public Assistance</span>
+        <h2 class="c2-section-title">Visit or Contact Our Office</h2>
+        <p class="c2-section-subtitle">We are always ready to assist with connection requests, bill inquiries, or water service concerns.</p>
+      </div>
+
+      <div class="c2-contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-detail-row">
+            <div class="contact-icon-bubble">&#128205;</div>
+            <div class="contact-text">
+              <h5>Main Office Address</h5>
+              <p>
+                Sitio Ibabao, Poblacion, Tabuelan, Cebu, Philippines, 6044<br>
+                <a href="https://www.bing.com/maps/default.aspx?v=2&pc=FACEBK&mid=8100&where1=10.82292%2C%20123.87441&FORM=FBKPL1&name=Sitio%20Ibabao%20Poblacion%20Tabuelan%20Cebu%2C%20Tabuelan%2C%20Philippines%2C%206044&mkt=en-US" target="_blank" rel="noopener noreferrer" style="color:var(--brand-ocean); font-weight:700; text-decoration:underline;">
+                  Open Location in Maps &rarr;
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-bubble">&#128340;</div>
+            <div class="contact-text">
+              <h5>Cashier &amp; Office Hours</h5>
+              <p>
+                <strong>Monday to Friday:</strong> 8:00 AM &ndash; 5:00 PM (No Noon Break)<br>
+                <strong>Weekends &amp; Holidays:</strong> Closed (Emergency repair crew on-call)
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-icon-bubble">&#128222;</div>
+            <div class="contact-text">
+              <h5>Direct Assistance Line</h5>
+              <p>
+                <strong>Telephone Hotline:</strong> <a href="tel:0324619206" style="color:var(--brand-ocean); font-weight:700;">(032) 461 9206</a><br>
+                <strong>Official Email:</strong> <a href="mailto:tawd.cebu@yahoo.com" style="color:var(--brand-ocean); font-weight:700;">tawd.cebu@yahoo.com</a><br>
+                <strong>Facebook:</strong> <a href="https://www.facebook.com/p/Tabuelan-Water-District-100063686925638/" target="_blank" rel="noopener noreferrer" style="color:var(--brand-ocean); font-weight:700;">Tabuelan Water District</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-action-card">
+          <h4 style="font-family:var(--font-display); font-size:1.35rem; color:var(--brand-deep); margin-bottom:0.75rem;">
+            Quick Action Dispatch
+          </h4>
+          <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:1.5rem;">
+            Notice a broken pipe or abnormal water pressure in your neighborhood? Submit a quick ticket and our field crew will be dispatched to inspect the line.
+          </p>
+
+          <button type="button" class="c2-btn-primary open-c2-report-modal" style="width:100%; justify-content:center; padding:1rem; margin-bottom:1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+            <span>Report a Leak or Water Emergency</span>
+          </button>
+
+          <div style="background:#f0f9ff; border:1px solid #bae6fd; border-radius:var(--radius-md); padding:1rem; font-size:0.85rem; color:#0369a1;">
+            <strong>Immediate Assistance:</strong> For urgent pipeline bursts or severe flooding, please call our emergency hotline directly at <strong>(032) 461 9206</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Civic Institutional Footer ================= -->
+  <footer class="c2-footer">
+    <div class="container">
+      <div class="c2-footer-top">
+        <div>
+          <div class="c2-footer-logo-block">
+            <img src="assets/logo-landscape-transparent.png" alt="Tabuelan Water District" style="height:48px; filter:brightness(0) invert(1); margin-bottom:0.75rem;">
+            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.06em; font-weight:700; color:#38bdf8;">
+              Province of Cebu &bull; Republic of the Philippines
+            </div>
+            <div style="font-size:0.8rem; color:#cbd5e1; font-weight:500;">
+              Government-Owned &amp; Controlled Corporation (GOCC)
+            </div>
+          </div>
+          <p class="footer-bio-text">
+            Operating under Presidential Decree No. 198 (Provincial Water Utilities Act of 1973) to provide sustainable, safe, and accessible drinking water for Tabuelan.
+          </p>
+          <a href="https://www.facebook.com/p/Tabuelan-Water-District-100063686925638/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(255,255,255,0.1); padding:0.35rem 0.85rem; border-radius:var(--radius-pill); color:#fff; font-size:0.8rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            <span>Follow our Facebook Page</span>
+          </a>
+        </div>
+
+        <div class="c2-footer-col">
+          <h5>Concessionaires</h5>
+          <ul class="c2-footer-links">
+            <li><a href="#technical-center">New Water Connection</a></li>
+            <li><a href="#technical-center">Water Rates &amp; Tariffs</a></li>
+            <li><a href="#announcements">Service Interruption Advisories</a></li>
+            <li><a href="#quality">Water Potability Standards</a></li>
+            <li><a href="#contact">Payment Cashier Hours</a></li>
+          </ul>
+        </div>
+
+        <div class="c2-footer-col">
+          <h5>Governance</h5>
+          <ul class="c2-footer-links">
+            <li><a href="#transparency">Transparency Seal</a></li>
+            <li><a href="#transparency">Freedom of Information</a></li>
+            <li><a href="#transparency">Citizen's Charter (RA 11032)</a></li>
+            <li><a href="#transparency">PhilGEPS Bids &amp; Awards</a></li>
+            <li><a href="https://lwua.gov.ph" target="_blank" rel="noopener noreferrer">Local Water Utilities Admin</a></li>
+          </ul>
+        </div>
+
+        <div class="c2-footer-col">
+          <h5>Office Location</h5>
+          <p style="font-size:0.85rem; line-height:1.6; color:#cbd5e1; margin-bottom:0.75rem;">
+            Sitio Ibabao Poblacion, Tabuelan, Cebu, Philippines, 6044<br>
+            Hotline: (032) 461 9206<br>
+            Email: tawd.cebu@yahoo.com
+          </p>
+          <p style="font-size:0.8rem; color:#94a3b8;">
+            Monday to Friday<br>8:00 AM &ndash; 5:00 PM (No Noon Break)
+          </p>
+        </div>
+      </div>
+
+      <div class="c2-footer-bottom">
+        <div>
+          &copy; 2026 Tabuelan Water District (TAWD). All Rights Reserved.
+        </div>
+        <div>
+          Province of Cebu &bull; Republic of the Philippines &bull; Public Water Utility
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= Report a Leak Modal ================= -->
+  <div class="c2-modal-overlay" id="c2ReportModal" role="dialog" aria-modal="true" aria-labelledby="c2ModalTitle">
+    <div class="c2-modal-box">
+      <div class="c2-modal-header">
+        <h4 id="c2ModalTitle">Report a Leak / Service Request</h4>
+        <button type="button" class="c2-modal-close" id="c2ModalClose" aria-label="Close modal">&times;</button>
+      </div>
+
+      <form id="c2ReportForm">
+        <div class="c2-modal-body">
+          <div class="c2-form-row">
+            <label for="c2ReporterName" class="c2-label">Your Full Name *</label>
+            <input type="text" id="c2ReporterName" class="c2-input" placeholder="Juan Dela Cruz" required>
+          </div>
+
+          <div class="c2-form-row">
+            <label for="c2ReporterPhone" class="c2-label">Contact / Mobile Number *</label>
+            <input type="tel" id="c2ReporterPhone" class="c2-input" placeholder="0912 345 6789" required>
+          </div>
+
+          <div class="c2-form-row">
+            <label for="c2BarangaySelect" class="c2-label">Barangay in Tabuelan *</label>
+            <select id="c2BarangaySelect" class="c2-select" required>
+              <option value="">Choose Barangay...</option>
+              <option value="Poblacion">Poblacion</option>
+              <option value="Sitio Ibabao">Sitio Ibabao (Poblacion)</option>
+              <option value="Tabunok">Tabunok</option>
+              <option value="Maravilla">Maravilla</option>
+              <option value="Kan-lunsing">Kan-lunsing</option>
+              <option value="Kantabogon">Kantabogon</option>
+              <option value="Mabun-ao">Mabun-ao</option>
+              <option value="Olivo">Olivo</option>
+              <option value="Tigbawan">Tigbawan</option>
+              <option value="Bongon">Bongon</option>
+              <option value="Villahermosa">Villahermosa</option>
+              <option value="Dalid">Dalid</option>
+            </select>
+          </div>
+
+          <div class="c2-form-row">
+            <label for="c2IssueCategory" class="c2-label">Nature of Problem *</label>
+            <select id="c2IssueCategory" class="c2-select" required>
+              <option value="Pipeline Leak">Distribution Main Leak / Pipe Burst</option>
+              <option value="Low Pressure">Low Water Pressure / Supply Loss</option>
+              <option value="Water Quality">Discolored / Turbid Water</option>
+              <option value="Meter Damage">Meter Leak or Dial Failure</option>
+              <option value="Illegal Connection">Suspected Unauthorized Tapping</option>
+              <option value="Other">General Service Concern</option>
+            </select>
+          </div>
+
+          <div class="c2-form-row">
+            <label for="c2LandmarkDesc" class="c2-label">Exact Location &amp; Landmark *</label>
+            <textarea id="c2LandmarkDesc" class="c2-input" rows="3" placeholder="Describe the location, nearest house, school, or landmark..." required></textarea>
+          </div>
+        </div>
+
+        <div class="c2-modal-footer">
+          <button type="button" class="c2-btn-secondary" id="c2ModalCancel">Cancel</button>
+          <button type="submit" class="c2-btn-primary">Submit Report</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
