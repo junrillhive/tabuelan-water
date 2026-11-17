@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabuelan Water District (TAWD) — Website Design Concepts</title>
+  <meta name="description" content="Design concept showcase for the official public portal of Tabuelan Water District (TAWD), Province of Cebu.">
+  <link rel="icon" type="image/png" href="concept/1/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-deep: #071928;
+      --bg-surface: #f4f8fb;
+      --card-bg: #ffffff;
+      --ink-900: #0b2236;
+      --ink-700: #2d465c;
+      --ink-500: #5b7388;
+      --border: #dde7f0;
+      --accent-1: #0b3b68;
+      --accent-1-soft: #e7f0f9;
+      --accent-2: #0277bd;
+      --accent-2-soft: #e3f4fc;
+      --accent-3: #0b6e61;
+      --accent-3-soft: #e2f5f1;
+      --radius-lg: 20px;
+      --radius-md: 12px;
+      --shadow-sm: 0 4px 16px rgba(11, 34, 54, 0.06);
+      --shadow-lg: 0 20px 44px rgba(11, 34, 54, 0.13);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--bg-surface);
+      color: var(--ink-900);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(1220px, 92%);
+      margin-inline: auto;
+    }
+
+    /* Header / Hero Banner */
+    .hero {
+      position: relative;
+      background:
+        radial-gradient(circle at 85% 18%, rgba(20, 184, 166, 0.22), transparent 45%),
+        radial-gradient(circle at 12% 80%, rgba(14, 165, 233, 0.22), transparent 48%),
+        linear-gradient(135deg, #061826 0%, #0b2d48 55%, #073b3a 100%);
+      color: #ffffff;
+      padding: 2.25rem 0 5.5rem;
+      overflow: hidden;
+    }
+
+    .hero-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding-bottom: 2.4rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .brand img {
+      height: 48px;
+      width: auto;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 6px 12px;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    }
+
+    .gov-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+    }
+
+    .gov-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #38f2c2;
+      box-shadow: 0 0 0 4px rgba(56, 242, 194, 0.2);
+    }
+
+    .hero-intro {
+      max-width: 760px;
+      margin-top: 2.6rem;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7ee8fa;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.15;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero p {
+      font-size: 1.04rem;
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 650px;
+    }
+
+    /* Concept Cards Grid */
+    .concepts-section {
+      margin-top: -3.2rem;
+      padding-bottom: 4rem;
+      flex: 1;
+      position: relative;
+      z-index: 2;
+    }
+
+    .concepts-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.6rem;
+      align-items: stretch;
+    }
+
+    .concept-card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+
+    .concept-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: #b8cde0;
+    }
+
+    .card-preview {
+      position: relative;
+      height: 215px;
+      overflow: hidden;
+      background: #0b2236;
+      display: block;
+      text-decoration: none;
+    }
+
+    .card-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.45s ease;
+    }
+
+    .concept-card:hover .card-preview img {
+      transform: scale(1.05);
+    }
+
+    .card-overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem 1.15rem;
+    }
+
+    .overlay-c1 {
+      background: linear-gradient(180deg, rgba(8, 30, 56, 0.45) 0%, rgba(8, 30, 56, 0.82) 100%);
+    }
+
+    .overlay-c2 {
+      background: linear-gradient(180deg, rgba(10, 52, 86, 0.35) 0%, rgba(8, 45, 76, 0.82) 100%);
+    }
+
+    .overlay-c3 {
+      background: linear-gradient(180deg, rgba(5, 41, 37, 0.35) 0%, rgba(5, 41, 37, 0.84) 100%);
+    }
+
+    .preview-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .concept-num {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 255, 255, 0.95);
+      color: var(--ink-900);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 0.32rem 0.72rem;
+      border-radius: 999px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .palette-dots {
+      display: inline-flex;
+      gap: 5px;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(6px);
+      padding: 5px 8px;
+      border-radius: 999px;
+    }
+
+    .palette-dots span {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      border: 1.5px solid rgba(255, 255, 255, 0.85);
+    }
+
+    .preview-label {
+      color: #ffffff;
+    }
+
+    .preview-label small {
+      display: block;
+      font-size: 0.73rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 0.15rem;
+    }
+
+    .preview-label strong {
+      font-size: 1.22rem;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    .card-body {
+      padding: 1.45rem 1.5rem 1.55rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .theme-pill {
+      align-self: flex-start;
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 0.28rem 0.68rem;
+      border-radius: 6px;
+      margin-bottom: 0.85rem;
+    }
+
+    .pill-c1 { background: var(--accent-1-soft); color: var(--accent-1); }
+    .pill-c2 { background: var(--accent-2-soft); color: var(--accent-2); }
+    .pill-c3 { background: var(--accent-3-soft); color: var(--accent-3); }
+
+    .card-desc {
+      font-size: 0.92rem;
+      color: var(--ink-700);
+      margin-bottom: 1.1rem;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-bottom: 1.5rem;
+      display: grid;
+      gap: 0.5rem;
+      flex: 1;
+    }
+
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.55rem;
+      font-size: 0.85rem;
+      color: var(--ink-700);
+    }
+
+    .feature-list svg {
+      flex-shrink: 0;
+      margin-top: 3px;
+      color: #0d9488;
+    }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding-top: 1.1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .btn-open {
+      flex: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: #ffffff;
+      transition: filter 0.2s ease, transform 0.15s ease;
+    }
+
+    .btn-open:hover {
+      filter: brightness(1.08);
+    }
+
+    .btn-c1 { background: var(--accent-1); }
+    .btn-c2 { background: var(--accent-2); }
+    .btn-c3 { background: var(--accent-3); }
+
+    .btn-newtab {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      color: var(--ink-700);
+      background: #f8fbfe;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .btn-newtab:hover {
+      background: #eef4fa;
+      color: var(--ink-900);
+      border-color: #b8cde0;
+    }
+
+    /* Quick Comparison Matrix */
+    .matrix-card {
+      margin-top: 2.5rem;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.6rem 1.75rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .matrix-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .matrix-head h2 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--ink-900);
+    }
+
+    .matrix-head span {
+      font-size: 0.83rem;
+      color: var(--ink-500);
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      min-width: 620px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.78rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--ink-500);
+      background: #f8fbfe;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td a {
+      color: var(--accent-2);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    td a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+      padding: 1.35rem 0;
+      font-size: 0.84rem;
+      color: var(--ink-500);
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    @media (max-width: 980px) {
+      .concepts-grid {
+        grid-template-columns: 1fr;
+        max-width: 580px;
+        margin-inline: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-topbar">
+        <div class="brand">
+          <img src="concept/1/assets/logo-landscape-transparent.png" alt="Tabuelan Water District Logo">
+        </div>
+        <div class="gov-meta">
+          <span class="gov-dot" aria-hidden="true"></span>
+          <span>Tabuelan, Cebu &bull; Public Portal Design Prototypes</span>
+        </div>
+      </div>
+
+      <div class="hero-intro">
+        <span class="eyebrow">Design Concept Showcase</span>
+        <h1>Tabuelan Water District Portal Concepts</h1>
+        <p>Explore and compare the three interactive web portal directions crafted for TAWD concessionaires, public transparency, and municipal water services.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="concepts-section">
+    <div class="container">
+      <div class="concepts-grid">
+
+        <!-- Concept 1 -->
+        <article class="concept-card">
+          <a href="concept/1/index.html" class="card-preview" aria-label="Open Concept 1: Modern Civic Enterprise">
+            <img src="concept/1/assets/water-lab.jpg" alt="Concept 1 Preview — Modern Civic Enterprise">
+            <div class="card-overlay overlay-c1">
+              <div class="preview-top">
+                <span class="concept-num">Concept 01</span>
+                <div class="palette-dots" title="Palette: Deep Civic Navy, Ocean Blue, Crisp White">
+                  <span style="background:#082038;"></span>
+                  <span style="background:#0066b2;"></span>
+                  <span style="background:#00b4d8;"></span>
+                </div>
+              </div>
+              <div class="preview-label">
+                <small>Institutional &amp; Structured</small>
+                <strong>Modern Civic Enterprise</strong>
+              </div>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="theme-pill pill-c1">Deep Navy &bull; Bento Services &bull; Gov Standard</span>
+            <p class="card-desc">Authoritative government utility layout featuring an urgent advisory ticker, structured dropdown menus, and bento-style quick service cards.</p>
+            <ul class="feature-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Top urgent pipeline advisory ticker &amp; live PST clock</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Bento service directory &amp; Citizen's Charter workflow</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Side-by-side LWUA water rates table &amp; bill calculator</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="concept/1/index.html" class="btn-open btn-c1">
+                <span>View Concept 1</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="concept/1/index.html" target="_blank" rel="noopener" class="btn-newtab" title="Open Concept 1 in a new tab" aria-label="Open Concept 1 in a new tab">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Concept 2 -->
+        <article class="concept-card">
+          <a href="concept/2/index.html" class="card-preview" aria-label="Open Concept 2: Welcoming Community Portal">
+            <img src="concept/2/assets/family-water.jpg" alt="Concept 2 Preview — Welcoming Community Portal">
+            <div class="card-overlay overlay-c2">
+              <div class="preview-top">
+                <span class="concept-num">Concept 02</span>
+                <div class="palette-dots" title="Palette: Warm Coastal Blue, Sky Cyan, Clean Slate">
+                  <span style="background:#0c3559;"></span>
+                  <span style="background:#0284c7;"></span>
+                  <span style="background:#f59e0b;"></span>
+                </div>
+              </div>
+              <div class="preview-label">
+                <small>People-First &amp; Transparent</small>
+                <strong>Welcoming Community Portal</strong>
+              </div>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="theme-pill pill-c2">Human Photography &bull; Project Progress &bull; Utility Hub</span>
+            <p class="card-desc">Warm, resident-friendly landing page prioritizing public announcements, capital project transparency, and an all-in-one bottom utility center.</p>
+            <ul class="feature-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Upfront Featured Announcements &amp; filterable advisories</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Infrastructure Projects &amp; completion progress bars</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Live 12-barangay PSI monitor &amp; 4-step application guide</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="concept/2/index.html" class="btn-open btn-c2">
+                <span>View Concept 2</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="concept/2/index.html" target="_blank" rel="noopener" class="btn-newtab" title="Open Concept 2 in a new tab" aria-label="Open Concept 2 in a new tab">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Concept 3 -->
+        <article class="concept-card">
+          <a href="concept/3/index.html" class="card-preview" aria-label="Open Concept 3: Coastal & Eco-Tropical Aqua">
+            <img src="concept/3/assets/hero-bg.jpg" alt="Concept 3 Preview — Coastal Community & Eco-Tropical Aqua">
+            <div class="card-overlay overlay-c3">
+              <div class="preview-top">
+                <span class="concept-num">Concept 03</span>
+                <div class="palette-dots" title="Palette: Rainforest Emerald, Tropical Aqua, Coral Accent">
+                  <span style="background:#052925;"></span>
+                  <span style="background:#14b8a6;"></span>
+                  <span style="background:#e8613c;"></span>
+                </div>
+              </div>
+              <div class="preview-label">
+                <small>Watershed-to-Tap Storytelling</small>
+                <strong>Coastal &amp; Eco-Tropical Aqua</strong>
+              </div>
+            </div>
+          </a>
+          <div class="card-body">
+            <span class="theme-pill pill-c3">Lagoon Emerald &bull; Solar Telemetry &bull; 4-Tab Toolkit</span>
+            <p class="card-desc">Story-driven ridge-to-reef experience connecting upland spring stewardship and solar pumping with interactive household tools.</p>
+            <ul class="feature-list">
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Live Watershed &amp; Solar Network Pulse hero telemetry</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>4-stage Spring-to-Sea water journey &amp; barangay voices</span>
+              </li>
+              <li>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>4-tab Concessionaire Toolkit with Senior/PWD bill estimator</span>
+              </li>
+            </ul>
+            <div class="card-actions">
+              <a href="concept/3/index.html" class="btn-open btn-c3">
+                <span>View Concept 3</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+              <a href="concept/3/index.html" target="_blank" rel="noopener" class="btn-newtab" title="Open Concept 3 in a new tab" aria-label="Open Concept 3 in a new tab">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Quick Comparison Matrix -->
+      <section class="matrix-card" aria-label="Concept comparison summary">
+        <div class="matrix-head">
+          <h2>Quick Comparison Summary</h2>
+          <span>Click any concept to test interactive calculators, modals, and mobile responsiveness</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Design Concept</th>
+                <th>Visual Aesthetic</th>
+                <th>Primary Narrative</th>
+                <th>Direct Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Concept 1</strong></td>
+                <td>Civic Navy &amp; Crisp Bento Grid</td>
+                <td>Official GOCC compliance, rapid service lookup &amp; rate transparency</td>
+                <td><a href="concept/1/index.html">concept/1/index.html &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>Concept 2</strong></td>
+                <td>Warm Coastal Blue &amp; Editorial Cards</td>
+                <td>Community trust, upfront advisories, project progress &amp; utility center</td>
+                <td><a href="concept/2/index.html">concept/2/index.html &rarr;</a></td>
+              </tr>
+              <tr>
+                <td><strong>Concept 3</strong></td>
+                <td>Lagoon Emerald &amp; Eco-Tropical Aqua</td>
+                <td>Watershed sustainability, solar resilience &amp; interactive 4-tab toolkit</td>
+                <td><a href="concept/3/index.html">concept/3/index.html &rarr;</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span><strong>Tabuelan Water District (TAWD)</strong> &bull; Sitio Ibabao, Poblacion, Tabuelan, Cebu 6044</span>
+      <span>Public Information Portal Design Showcase</span>
+    </div>
+  </footer>
+
+</body>
+</html>
